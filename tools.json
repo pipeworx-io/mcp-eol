@@ -1,0 +1,74 @@
+[
+  {
+    "name": "search",
+    "description": "Search EOL for a name (common or scientific).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "e.g. \"Panthera leo\" or \"blue whale\""
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-50 (default 10)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_page",
+    "description": "Fetch a taxon page by EOL id (synonyms, common names, hierarchy summary).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "EOL page id (from /search)"
+        },
+        "detail": {
+          "type": "boolean",
+          "description": "Include data objects (texts, images). Default false."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "pages_by_name",
+    "description": "Find EOL page id(s) for an exact scientific name.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "e.g. \"Panthera leo\""
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "hierarchy",
+    "description": "Taxonomic hierarchy for a given EOL hierarchy entry id (from get_page).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "taxon_id": {
+          "type": "number",
+          "description": "taxonConceptID from a page response"
+        }
+      },
+      "required": [
+        "taxon_id"
+      ]
+    }
+  }
+]

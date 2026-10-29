@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/eol",
   "title": "Eol",
   "description": "Encyclopedia of Life (EOL) MCP",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/eol",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-eol",
