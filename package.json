@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-eol",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Encyclopedia of Life (EOL) MCP",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "eol",
     "gatewaySlug": "eol",
-    "sourceHash": "v1-c2432001c5d8bb281f839435ec1df5a0dba964d0a3a3631243f2a3b309854159",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-a4bae215c43a34936ea1702e3348dfc2e90eb2e41f87a049c0047d28522eda53",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
